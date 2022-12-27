@@ -20,8 +20,8 @@ function App() {
                 <Route path="/login" component={Login} />
                 <Route path="/posts/:postId?" component={Posts} />
                 <Route path="/404" component={NotFound} />
-                <Redirect to="/404" />
                 <Redirect from="/admin" to="/dashboard" />
+                <Redirect to="/404" />
             </Switch>
         </div>
     );
